@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 class Header extends Component {
   state = {
@@ -21,7 +22,7 @@ class Header extends Component {
         }}
       >
         <div className="navbar-brand">
-          <a className="navbar-item">
+          <NavLink className="navbar-item" to="/" activeClassName="is-active">
             <img
               style={{
                 borderTopLeftRadius: "50%",
@@ -35,7 +36,7 @@ class Header extends Component {
               alt=""
             />
             <span>Guilherme Porto</span>
-          </a>
+          </NavLink>
           <button className="button navbar-burger" onClick={this.toggleNav}>
             <span />
             <span />
@@ -48,7 +49,11 @@ class Header extends Component {
           }
         >
           <div className="navbar-start">
-            <a className="navbar-item">
+            <NavLink
+              className="navbar-item"
+              to="/blog"
+              activeClassName="is-active"
+            >
               <span
                 className="icon has-text-primary"
                 style={{ marginRight: 5 }}
@@ -56,7 +61,7 @@ class Header extends Component {
                 <i className="fas fa-code" />
               </span>
               Code Blog
-            </a>
+            </NavLink>
             <a className="navbar-item">
               <span className="icon" style={{ marginRight: 5 }}>
                 <i className="fab fa-lg fa-medium" />
