@@ -31,7 +31,7 @@ class Header extends Component {
                 borderBottomRightRadius: "50%",
                 marginRight: 15
               }}
-              src="https://media-exp2.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAU3AAAAJGE1MzYxNzYzLTE1NTUtNDEyYi04MzRjLTgzZjNkOGU0MGIzNg.jpg"
+              src="https://rangle.io/images/services/react-01.svg"
               width="30px"
               alt=""
             />
