@@ -62,12 +62,16 @@ class Header extends Component {
               </span>
               Code Blog
             </NavLink>
-            <a className="navbar-item">
+            <NavLink
+              className="navbar-item"
+              to="/medium"
+              activeClassName="is-active"
+            >
               <span className="icon" style={{ marginRight: 5 }}>
                 <i className="fab fa-lg fa-medium" />
               </span>
               Medium
-            </a>
+            </NavLink>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">Projects</a>
               <div className="navbar-dropdown">
